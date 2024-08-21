@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    /* フレックスボックスでレイアウトを制御 */
+    justify-content: space-between;
+    /* 左端と右端にアイテムを配置 */
+    align-items: center;
+    /* 垂直方向に中央揃え */
+    background-color: black;
+    /* 背景色を黒に設定 */
+    color: white;
+    /* 文字色を白に設定 */
+    padding: 0 20px;
+    /* 左右にパディングを追加 */
+    height: 5rem;
+}
+
+/* ヘッダー内のロゴ */
+.header1 {
+    display: flex;
+    /* フレックスボックスで中央配置 */
+    align-items: center;
+    /* 垂直方向に中央揃え */
+    justify-content: left;
+    /* 横方向に右揃え */
+    margin-left: 4rem;
+}
+
+/* ヘッダー内のナビゲーション */
+.header2 {
+    display: flex;
+    /* フレックスボックスでレイアウトを制御 */
+    align-items: center;
+    /* 垂直方向に中央揃え */
+}
+
+/* ナビゲーションのリスト */
+.click {
+    display: flex;
+    /* フレックスボックスでリストを横並びにする */
+    list-style: none;
+    /* デフォルトのリストスタイルを削除 */
+    margin-top: 1rem;
+    /* マージンをリセット */
+    padding: 0;
+    /* パディングをリセット */
+}
+
+/* リストアイテム */
+.click li {
+    margin: 0 1rem;
+
+    /* アイテム間にマージンを追加 */
+}
+
+/* リンクのスタイル */
+.click a {
+    color: white;
+    /* リンクの文字色を白に設定 */
+    text-decoration: none;
+    /* リンクの下線を削除 */
+
+}
+
+/* リンクにホバー時のスタイル */
+.click a:hover {
+    text-decoration: underline;
+    /* ホバー時に下線を追加 */
+}
+
+.brandname {
+    font-size: 3rem;
+}
+
