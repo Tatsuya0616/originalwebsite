@@ -1,3 +1,7 @@
+/* 
+header
+*/
+
 .header {
     display: flex;
     /* フレックスボックスでレイアウトを制御 */
@@ -15,9 +19,7 @@
     height: 5rem;
     border: 0.25rem white solid;
     position: fixed;
-
-
-
+    z-index: 99;
 }
 
 /* ヘッダー内のロゴ */
@@ -53,26 +55,33 @@
 }
 
 /* リストアイテム */
-.click li {
+.click>li {
     margin: 0 1rem;
-
     /* アイテム間にマージンを追加 */
 }
 
 /* リンクのスタイル */
-.click a {
+.click>li>a {
     color: white;
     /* リンクの文字色を白に設定 */
     text-decoration: none;
     /* リンクの下線を削除 */
-
+    border-bottom: 1px transparent solid;
+    transition: border-bottom .5s ease;
 }
 
 /* リンクにホバー時のスタイル */
-.click a:hover {
+.click>li>a:hover {
     text-decoration: underline;
+    color: aqua;
+
     /* ホバー時に下線を追加 */
 }
+
+
+/* 
+hero(section1)
+*/
 
 .brandname {
     font-size: 3rem;
@@ -101,4 +110,31 @@
 
 i {
     font-style: italic;
+}
+
+/* section2 */
+#name {
+    color: aliceblue;
+    width: auto;
+    height: 70rem;
+    border: 0.3rem white solid;
+    position: relative;
+}
+
+.namereason {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.smile {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -505);
+    width: 35rem;
+    height: 30rem;
 }
