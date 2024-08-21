@@ -11,7 +11,13 @@
     /* 文字色を白に設定 */
     padding: 0 20px;
     /* 左右にパディングを追加 */
+    width: 100%;
     height: 5rem;
+    border: 0.25rem white solid;
+    position: fixed;
+
+
+
 }
 
 /* ヘッダー内のロゴ */
@@ -31,6 +37,7 @@
     /* フレックスボックスでレイアウトを制御 */
     align-items: center;
     /* 垂直方向に中央揃え */
+    margin-right: 3rem;
 }
 
 /* ナビゲーションのリスト */
@@ -71,3 +78,27 @@
     font-size: 3rem;
 }
 
+#main {
+    background-color: black;
+}
+
+#top {
+    color: aliceblue;
+    width: auto;
+    height: 50rem;
+    border: 0.3rem white solid;
+    position: relative;
+}
+
+.logo-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    color: aliceblue;
+}
+
+i {
+    font-style: italic;
+}
