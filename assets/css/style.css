@@ -17,7 +17,7 @@ header
     /* 左右にパディングを追加 */
     width: 100%;
     height: 5rem;
-    border: 0.25rem white solid;
+    border: 0.15rem white solid;
     position: fixed;
     z-index: 99;
 }
@@ -73,7 +73,7 @@ header
 /* リンクにホバー時のスタイル */
 .click>li>a:hover {
     text-decoration: underline;
-    color: aqua;
+    color: gray;
 
     /* ホバー時に下線を追加 */
 }
@@ -88,7 +88,7 @@ hero(section1)
 }
 
 #main {
-    background-color: black;
+    background-color: hsla(0, 0%, 0%, 0.9);
 }
 
 #top {
@@ -116,25 +116,80 @@ i {
 #name {
     color: aliceblue;
     width: auto;
-    height: 70rem;
+    height: 80rem;
     border: 0.3rem white solid;
     position: relative;
 }
 
 .namereason {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-    line-height: 1.5;
+
 }
 
 .smile {
     position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -505);
-    width: 35rem;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%rem;
+    height: 35rem;
+    border: 1rem black solid;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "游明朝";
+    line-height: 3rem;
+}
+
+.name-logo {
+    color: brown;
+    line-height: 3rem;
+}
+
+/* section3 */
+
+
+/* #clothes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#clothes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2列のグリッドを作成 */
+    grid-gap: 2rem;
+    /* アイテム間のスペースを設定 */
+    height: 150rem;
+}
+
+.T-shirt img {
+    width: 30rem;
+    /* 画像の幅を親要素に合わせる */
     height: 30rem;
+    /* 画像の高さを自動調整 */
+}
+
+.T-shirt p {
+    text-align: center;
+    /* テキストを中央揃えにする */
+    margin-top: 8px;
+    /* テキストと画像の間にスペースを追加 */
+}
+
+.photo {
+    width: 5rem;
+    height: 8rem;
+}
+
+.price {
+    color: aliceblue;
 }
