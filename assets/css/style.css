@@ -16,8 +16,8 @@ header
     padding: 0 20px;
     /* 左右にパディングを追加 */
     width: 100%;
-    height: 5rem;
-    border: 0.15rem white solid;
+    height: 10vh;
+    border-bottom: 0.5vh white solid;
     position: fixed;
     z-index: 99;
 }
@@ -30,7 +30,7 @@ header
     /* 垂直方向に中央揃え */
     justify-content: left;
     /* 横方向に右揃え */
-    margin-left: 4rem;
+    margin-left: 5vw;
 
 }
 
@@ -44,7 +44,7 @@ header
     /* フレックスボックスでレイアウトを制御 */
     align-items: center;
     /* 垂直方向に中央揃え */
-    margin-right: 3rem;
+    margin-right: 3vw;
 }
 
 /* ナビゲーションのリスト */
@@ -53,7 +53,7 @@ header
     /* フレックスボックスでリストを横並びにする */
     list-style: none;
     /* デフォルトのリストスタイルを削除 */
-    margin-top: 1rem;
+    margin-top: 2vh;
     /* マージンをリセット */
     padding: 0;
     /* パディングをリセット */
@@ -61,7 +61,7 @@ header
 
 /* リストアイテム */
 .click>li {
-    margin: 0 1rem;
+    margin: 1vw;
     /* アイテム間にマージンを追加 */
 }
 
@@ -69,10 +69,14 @@ header
 .click>li>a {
     color: white;
     /* リンクの文字色を白に設定 */
-    text-decoration: none;
+
     /* リンクの下線を削除 */
-    border-bottom: 1px transparent solid;
+    border-bottom: 0.5vh transparent solid;
     transition: border-bottom .5s ease;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* リンクにホバー時のスタイル */
@@ -83,24 +87,85 @@ header
     /* ホバー時に下線を追加 */
 }
 
+/* main */
+
+
+#back {
+    background-color: hsla(0, 0%, 0%, 1);
+    width: 100%;
+    height: 100%;
+
+}
+
+.back2 {
+    position: relative;
+    z-index: 0;
+}
+
+
+
+.clod1 {
+    opacity: 0.6;
+    position: absolute;
+    position: fixed;
+    background-attachment: fixed;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
+}
+
+.clod2 {
+    opacity: 0.6;
+    position: absolute;
+    position: fixed;
+    background-attachment: fixed;
+    margin-top: 60vh;
+    margin-left: 5vw;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
+}
+
+.clod3 {
+    opacity: 0.6;
+    position: absolute;
+    position: fixed;
+    background-attachment: fixed;
+    margin-top: 10vh;
+    margin-left: 65vw;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
+}
+
+.clod4 {
+    opacity: 0.6;
+    position: absolute;
+    position: fixed;
+    background-attachment: fixed;
+    margin-top: 60vh;
+    margin-left: 65vw;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
+}
+
 
 /* 
 hero(section1)
 */
 
 .brandname {
-    font-size: 3rem;
+    font-size: 4vb;
 }
 
-#main {
-    background-color: hsla(0, 0%, 0%, 0.9);
-}
 
 #top {
     color: aliceblue;
     width: auto;
-    height: 50rem;
-    border: 0.3rem white solid;
+    height: 100vh;
     position: relative;
 }
 
@@ -109,7 +174,7 @@ hero(section1)
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 10rem;
+    font-size: 20vb;
     color: aliceblue;
 }
 
@@ -121,8 +186,7 @@ i {
 #name {
     color: aliceblue;
     width: auto;
-    height: 80rem;
-    border: 0.3rem white solid;
+    height: 160vh;
     position: relative;
 }
 
@@ -131,7 +195,8 @@ i {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 6vb;
+    width: 100%;
 
 }
 
@@ -140,9 +205,9 @@ i {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%rem;
-    height: 35rem;
-    border: 1rem #663300 solid;
+    width: 70vw;
+    height: 70vh;
+    border: 2vb #663300 solid;
 }
 
 p {
@@ -150,32 +215,27 @@ p {
     justify-content: center;
     align-items: center;
     font-family: "游明朝";
-    line-height: 3rem;
+    line-height: 5vh;
 }
 
-.name-logo {
-    color: brown;
-    line-height: 3rem;
-}
 
 /* section3 */
 
 
 #clothes {
-    height: 150rem;
+    height: 270vh;
     display: flex;
     flex-direction: column;
-    border: 0.3rem white solid;
-
+    z-index: 99;
 }
 
 .shirt-text {
-    font-size: 6rem;
+    font-size: 12vb;
     display: flex;
     justify-content: center;
-    color: black;
-    margin-top: 9rem;
-    height: 10rem;
+    color: white;
+    margin-top: 18vh;
+    height: 20vh;
     font-family: "Yu Gothic UI Semibold";
 
 }
@@ -187,9 +247,9 @@ p {
     /* 2列のグリッドを作成 */
     grid-gap: 2.5rem;
     /* アイテム間のスペースを設定 */
-    margin-top: 10rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-top: 20vh;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
     place-items: center;
 
 }
@@ -204,36 +264,55 @@ p {
     text-align: center;
     /* テキストを中央揃え */
 
+
 }
-
-
-
 
 .T-shirt img {
-    width: 30rem;
+    width: 45vb;
     /* 画像の幅を親要素に合わせる */
-    height: 30rem;
+    height: 45vh;
     /* 画像の高さを自動調整 */
-    border: 1rem #663300 solid;
-}
-
-.T-shirt p {
-    text-align: center;
-    /* テキストを中央揃えにする */
-    margin-top: 1rem;
-    /* テキストと画像の間にスペースを追加 */
-    width: 20rem;
-
-    color: black;
-    border: 0.5rem #663300 solid;
-    background-color: aliceblue;
-}
-
-.photo {
-    width: 5rem;
-    height: 8rem;
+    border: 2vh #663300 solid;
+    margin: 0 3vw;
 }
 
 .price {
-    color: aliceblue;
+    text-align: center;
+    /* テキストを中央揃えにする */
+    margin-top: 1rem;
+    margin-left: 5vw;
+    /* テキストと画像の間にスペースを追加 */
+    width: 40vb;
+    color: black;
+    border: 1vh #663300 solid;
+    background-color: white;
+}
+
+
+
+/* footer */
+#sns {
+    background-color: black;
+    height: 20vh;
+    border-top: 0.5vh white solid;
+}
+
+#sns2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5vh;
+
+}
+
+.logo-foot {
+    font-size: 10vb;
+    color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.url {
+    width: 5vw;
+    height: 7vh;
 }
