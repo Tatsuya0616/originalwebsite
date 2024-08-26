@@ -22,6 +22,21 @@ header
     z-index: 99;
 }
 
+@media screen and (max-width:780px) {
+    .header {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        height: 5vh;
+        border-bottom: 0.3vh white solid;
+        position: fixed;
+        z-index: 99;
+    }
+}
+
 /* ヘッダー内のロゴ */
 .header1 {
     display: flex;
@@ -46,6 +61,7 @@ header
     /* 垂直方向に中央揃え */
     margin-right: 3vw;
 }
+
 
 /* ナビゲーションのリスト */
 .click {
@@ -73,6 +89,16 @@ header
     /* リンクの下線を削除 */
     border-bottom: 0.5vh transparent solid;
     transition: border-bottom .5s ease;
+}
+
+.brandname {
+    font-size: 4vb;
+}
+
+@media screen {
+    .header2 {
+        font-size: 1vb;
+    }
 }
 
 a {
@@ -152,14 +178,33 @@ a {
     z-index: -1;
 }
 
+@media screen {
+    .clod1 {
+        width: 30vw;
+        height: 15vh;
+    }
+
+    .clod2 {
+        width: 30vw;
+        height: 15vh;
+    }
+
+    .clod3 {
+        width: 30vw;
+        height: 15vh;
+    }
+
+    .clod4 {
+        width: 30vw;
+        height: 15vh;
+    }
+}
+
 
 /* 
 hero(section1)
 */
 
-.brandname {
-    font-size: 4vb;
-}
 
 
 #top {
@@ -182,6 +227,23 @@ i {
     font-style: italic;
 }
 
+@media screen and (max-width:780px) {
+    #top {
+        height: 90vh;
+    }
+
+    .logo-top {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10vb;
+        color: aliceblue;
+    }
+
+
+}
+
 /* section2 */
 #name {
     color: aliceblue;
@@ -197,7 +259,6 @@ i {
     transform: translate(-50%, -50%);
     font-size: 6vb;
     width: 100%;
-
 }
 
 .smile {
@@ -218,6 +279,34 @@ p {
     line-height: 5vh;
 }
 
+@media screen and (max-width:780px) {
+    #name {
+        color: aliceblue;
+        width: auto;
+        height: 100vh;
+    }
+
+    .namereason {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3vb;
+    }
+
+    .smile {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 30vh;
+        border: 1vb #663300 solid;
+
+    }
+
+}
+
 
 /* section3 */
 
@@ -229,6 +318,8 @@ p {
     z-index: 99;
 }
 
+
+
 .shirt-text {
     font-size: 12vb;
     display: flex;
@@ -237,10 +328,9 @@ p {
     margin-top: 18vh;
     height: 20vh;
     font-family: "Yu Gothic UI Semibold";
-
 }
 
-.clod9shirt {
+.cloud9shirt {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -251,7 +341,6 @@ p {
     /* margin-left: 10vw;
     margin-right: 10vw; */
     place-items: center;
-
 }
 
 .T-shirt {
@@ -276,6 +365,10 @@ p {
     margin: 0 3vw;
 }
 
+.T-shirt img:hover {
+    transform: scale(1.3, 1.3);
+}
+
 .price {
     text-align: center;
     /* テキストを中央揃えにする */
@@ -287,6 +380,50 @@ p {
     border: 1vh #663300 solid;
     background-color: white;
 }
+
+@media screen and (max-width:780px) {
+    #clothes {
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+        position: relative;
+    }
+
+    .shirt-text {
+        position: absolute;
+
+        left: 25%;
+        color: white;
+        font-size: 5vb;
+        margin-top: 2vh;
+        height: 10vh;
+        font-family: "Yu Gothic UI Semibold";
+    }
+
+    .cloud9shirt {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .T-shirt img {
+        width: 60vw;
+        height: 30vh;
+        border: 1vh #663300 solid;
+        margin: 0;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+}
+
+
 
 
 
@@ -315,4 +452,30 @@ p {
 .url {
     width: 5vw;
     height: 7vh;
+}
+
+@media screen and (max-width:780px) {
+    #sns {
+        height: 15vh;
+    }
+
+    #sns2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo-foot {
+        font-size: 5vb;
+        color: white;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    .url {
+        width: 6vw;
+        height: 3vh;
+        padding-top: 0.7vh;
+    }
+
 }
