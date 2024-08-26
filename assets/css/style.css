@@ -432,6 +432,11 @@ p {
         border: 0.5vh #663300 solid;
         background-color: white;
     }
+
+    .T-shirt img:hover {
+        transform: none;
+    }
+
 }
 
 
