@@ -424,10 +424,10 @@ p {
         text-align: center;
         /* テキストを中央揃えにする */
 
-        margin: 0;
+        margin: 2vh 0 0 0;
         padding: 0;
         /* テキストと画像の間にスペースを追加 */
-        width: 35vb;
+        width: 38vb;
         color: black;
         border: 0.5vh #663300 solid;
         background-color: white;
