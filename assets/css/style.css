@@ -178,7 +178,7 @@ a {
     z-index: -1;
 }
 
-@media screen {
+@media screen and (max-width:780px) {
     .clod1 {
         width: 30vw;
         height: 15vh;
