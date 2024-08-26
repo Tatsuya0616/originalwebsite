@@ -392,8 +392,9 @@ p {
 
     .shirt-text {
         position: absolute;
-
-        left: 25%;
+        left: 50%;
+        top: 3%;
+        transform: translate(-50%, -50%);
         color: white;
         font-size: 5vb;
         margin-top: 2vh;
@@ -421,8 +422,16 @@ p {
 
     .price {
         text-align: center;
-    }
+        /* テキストを中央揃えにする */
 
+        margin: 0;
+        padding: 0;
+        /* テキストと画像の間にスペースを追加 */
+        width: 35vb;
+        color: black;
+        border: 0.5vh #663300 solid;
+        background-color: white;
+    }
 }
 
 
